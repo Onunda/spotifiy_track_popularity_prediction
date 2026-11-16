@@ -1,0 +1,92 @@
+# ==========================================
+# Python & Virtual Environments
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+.env
+.env.*
+!.env.example
+
+# Packaging & Distribution
+/build/
+/dist/
+/eggs/
+/.eggs/
+/lib/
+/lib64/
+/parts/
+/sdist/
+/var/
+/wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==========================================
+# Flask & App Runtime
+# ==========================================
+instance/
+.webassets-cache
+*.log
+*.sqlite3
+*.db
+
+# ==========================================
+# Data & ML Artifacts
+# ==========================================
+# Ignore raw datasets & temp files, but allow the production model
+data/*.csv
+*.xlsx
+*.parquet
+*.zip
+*.tar.gz
+*.gz
+*.pkl
+*.pickle
+!models/model.pkl
+
+# ==========================================
+# Testing, Linting & Notebooks
+# ==========================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ==========================================
+# IDEs & Editors
+# ==========================================
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# OS & CI/CD Artifacts
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+builds/
