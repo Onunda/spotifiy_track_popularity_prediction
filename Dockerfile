@@ -19,4 +19,4 @@ EXPOSE 5000
 ENV FLASK_APP=src/serve.py
 ENV PYTHONUNBUFFERED=1
 
-CMD ["python", "-m", "src.serve"]
+CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-5000} src.serve:app"]

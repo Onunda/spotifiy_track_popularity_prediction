@@ -6,14 +6,8 @@ __pycache__/
 *$py.class
 *.so
 .Python
-.idea/
-**/.idea/
-*.iws
-*.iml
-*.ipr
-out/
-.pytest_cache/
 .venv/
+**/.venv/
 venv/
 ENV/
 env/
@@ -74,12 +68,14 @@ htmlcov/
 .ipynb_checkpoints/
 
 # ==========================================
-# IDEs & Editors
+# IDEs & Editors (PyCharm / VS Code)
 # ==========================================
 .idea/
+**/.idea/
 *.iws
 *.iml
 *.ipr
+out/
 .vscode/
 *.swp
 *.swo
