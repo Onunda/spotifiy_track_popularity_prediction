@@ -6,7 +6,13 @@ __pycache__/
 *$py.class
 *.so
 .Python
-.idea
+.idea/
+**/.idea/
+*.iws
+*.iml
+*.ipr
+out/
+.pytest_cache/
 .venv/
 venv/
 ENV/
