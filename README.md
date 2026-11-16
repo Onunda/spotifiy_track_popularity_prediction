@@ -303,9 +303,8 @@ curl.exe -X POST "http://localhost:5000/predict" `
 ## Cloud Deployment(Render)
 Selected Render free-tier to deploy my lightweight flask-based web app and machine learning API mainly due cost
 ### Live API URL
-[Spotify Track Popularity Predictor Live url]( )
+[Spotify Track Popularity Predictor Live url_apidocs](https://spotifiy-track-popularity-prediction.onrender.com/apidocs/ )
 > NB: Render's free tier API may take up a minute to respond on the first request, due to waking up from idle sleep
-[Spotify Track Popularity Predictor Live_apidocs]( )
 ### Screenshots or video of deployment
 
 ---
