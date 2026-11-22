@@ -1,8 +1,12 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from flasgger import Swagger
+from werkzeug.middleware.proxy_fix import ProxyFix
 from src.predict import SongPopularityPredictor
 
 app = Flask(__name__)
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1, x_prefix=1)
+CORS(app)
 swagger_template = {
     "swagger": "2.0",
     "info": {
@@ -15,10 +19,7 @@ swagger_template = {
         ),
         "version": "1.0.0"
     },
-    "host": "localhost:5000",
-    "schemes": [
-        "http"
-    ]
+    "schemes": ["https", "http"]
 }
 app.config['SWAGGER'] = {'title': 'Spotify Track Popularity Predictor API','uiversion': 3 }
 swagger = Swagger(app, template=swagger_template)
